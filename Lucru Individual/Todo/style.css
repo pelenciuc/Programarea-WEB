@@ -1,0 +1,113 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.todo {
+    background: aquamarine;
+    padding: 20px;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.todo__item {
+    position: relative;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.todo__item--title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.todo__item--text {
+    font-size: 1rem;
+}
+
+.todo__item--date {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.todo__item--remove {
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    color: darkred;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.todo__item--edit {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    color: darkred;
+    cursor: pointer;
+}
+
+
+.todo__item--edit {
+    color: green;
+}
+
+.create {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.input {
+    padding: 8px;
+}
+
+.textarea {
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background-color: aqua;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.btn:hover {
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background: rgba(0,0,0, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 25px;
+}
